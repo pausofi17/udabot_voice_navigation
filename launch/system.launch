@@ -1,0 +1,9 @@
+<launch>
+  <arg name="sim" default="false"/>
+
+  <node pkg="udabot_voice_navigation" type="audio_processor.py" name="audio_node" output="screen">
+  </node>
+
+  <node pkg="udabot_voice_navigation" type="motion_controller.py" name="motion_node" output="screen">
+  </node>
+</launch> 
